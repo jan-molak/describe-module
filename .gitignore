@@ -4,6 +4,8 @@
 
 # Node
 node_modules
+typings
+*.log
 
 # Build process
 staging

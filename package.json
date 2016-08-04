@@ -6,10 +6,10 @@
     "test": "node ./node_modules/gulp/bin/gulp.js test",
     "prepublish": "node ./node_modules/gulp/bin/gulp.js prepublish",
     "postinstall": "npm run typings -- install",
-    "typings": "typings"
+    "typings": "typings",
+    "report-coverage": "cat ./staging/reports/coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git://github.com/jan-molak/describe-module.git"
@@ -22,11 +22,10 @@
   "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
   "homepage": "https://github.com/jan-molak/describe-module",
   "license": "Apache-2.0",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "3.5.0",
+    "coveralls": "2.11.12",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
     "gulp-concat": "2.6.0",

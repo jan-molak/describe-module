@@ -13,6 +13,8 @@ before_script:
   - npm prune
   - npm install
 script: gulp
+after_success:
+  - npm run report-coverage
 branches:
   only:
     - master
