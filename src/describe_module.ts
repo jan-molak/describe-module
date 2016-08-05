@@ -23,6 +23,8 @@ export function describeUsing(cwd: string, pathToGlobalModules: string, fs: type
         .descriptionOf(moduleName);
 }
 
+// --
+
 interface CandidateModuleLocation {
     existsFor(moduleName: string): boolean;
     descriptionOf(moduleName: string): Description;
