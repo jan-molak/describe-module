@@ -1,6 +1,6 @@
 {
   "name": "describe-module",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0",
   "description": "A tiny library to help you find out where a given node module has been installed",
   "scripts": {
     "commit": "git-cz",
