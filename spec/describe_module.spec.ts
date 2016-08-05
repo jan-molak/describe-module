@@ -3,7 +3,7 @@ import mock   = require('mock-fs');
 import nodefs = require('fs');
 
 import { describeUsing } from '../src/describe_module';
-import integratedDescribe = require('../src/index');
+import integratedDescribe from '../src/index';
 
 import { Config } from 'mock-fs';
 import { Directory } from 'mock-fs';
