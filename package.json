@@ -22,7 +22,9 @@
   "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
   "homepage": "https://github.com/jan-molak/describe-module",
   "license": "Apache-2.0",
-  "dependencies": {},
+  "dependencies": {
+    "global-modules": "0.2.3"
+  },
   "devDependencies": {
     "chai": "3.5.0",
     "coveralls": "2.11.12",
@@ -36,6 +38,7 @@
     "gulp-typescript": "2.13.6",
     "merge2": "1.0.2",
     "mocha": "3.0.0",
+    "mock-fs": "3.11.0",
     "remap-istanbul": "0.6.4",
     "run-sequence": "1.2.2",
     "ts-helper": "0.0.1",

@@ -1,4 +1,4 @@
 --require ts-node/register
---reporter dot
+--ui bdd
 --watch-extensions ts
 spec/**/*.spec.ts
