@@ -4,8 +4,8 @@
   "description": "A tiny library to help you find out where a given node module has been installed",
   "scripts": {
     "commit": "git-cz",
-    "test": "node ./node_modules/gulp/bin/gulp.js test",
-    "prepublish": "node ./node_modules/gulp/bin/gulp.js prepublish",
+    "test": "gulp test",
+    "prepublish": "gulp prepublish",
     "postinstall": "npm run typings -- install",
     "typings": "typings",
     "report-coverage": "cat ./staging/reports/coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
