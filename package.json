@@ -1,18 +1,20 @@
 {
   "name": "describe-module",
-  "version": "0.0.1",
+  "version": "0.0.0-semantic-release",
   "description": "A tiny library to help you find out where a given node module has been installed",
   "scripts": {
+    "commit": "git-cz",
     "test": "node ./node_modules/gulp/bin/gulp.js test",
     "prepublish": "node ./node_modules/gulp/bin/gulp.js prepublish",
     "postinstall": "npm run typings -- install",
     "typings": "typings",
-    "report-coverage": "cat ./staging/reports/coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js"
+    "report-coverage": "cat ./staging/reports/coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jan-molak/describe-module.git"
+    "url": "https://github.com/jan-molak/describe-module.git"
   },
   "bugs": {
     "url": "https://github.com/jan-molak/describe-module/issues"
@@ -27,7 +29,9 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
+    "commitizen": "2.8.4",
     "coveralls": "2.11.12",
+    "cz-conventional-changelog": "1.1.6",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
     "gulp-concat": "2.6.0",
@@ -41,6 +45,7 @@
     "mock-fs": "3.11.0",
     "remap-istanbul": "0.6.4",
     "run-sequence": "1.2.2",
+    "semantic-release": "^4.3.5",
     "ts-helper": "0.0.1",
     "ts-node": "1.2.2",
     "tslint": "3.14.0",
@@ -50,5 +55,10 @@
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
