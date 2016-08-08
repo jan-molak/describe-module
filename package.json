@@ -11,7 +11,21 @@
     "report-coverage": "cat ./staging/reports/coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "resolve",
+    "prefix",
+    "path",
+    "package",
+    "module",
+    "global",
+    "dirname",
+    "directory",
+    "npm",
+    "modules",
+    "module",
+    "global"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jan-molak/describe-module.git"
