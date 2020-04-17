@@ -35,7 +35,14 @@
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "author": {
+    "name": "Jan Molak",
+    "email": "jan.molak@smartcodeltd.co.uk",
+    "url": "https://janmolak.com"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/jan-molak"
+  },
   "homepage": "https://github.com/jan-molak/describe-module",
   "license": "Apache-2.0",
   "dependencies": {
